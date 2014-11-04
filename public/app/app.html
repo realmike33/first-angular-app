@@ -1,0 +1,9 @@
+<div class="panel panel-default" ng-repeat="post in data">
+  <div class="panel-heading" ng-click="test($index)">
+    <a ng-click="go($index)">{{post.data.title}}</a>
+  </div>
+  <div class="panel-body">
+    <img ng-src="{{trust(post.data.thumbnail)}}">
+      {{post.data.selftext}}
+  </div>
+</div>
